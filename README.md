@@ -1,4 +1,4 @@
-# TRIAL EXAM: Python Basics
+# EXAM: Python Basics
 
 ### Getting Started
  - Fork this repository under your own account
