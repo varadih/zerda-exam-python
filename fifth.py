@@ -2,10 +2,10 @@
 # it should take 1 parameter in its constructor: the stored fuel
 
 
-class SpaceX():
+class SpaceX(Rocket):
     def __init__(self, stored_fuel):
         self.stored_fuel = stored_fuel
-        self.num_rockets = []
+        self.num_rockets = 0
 
 # it should have 4 methods:
 #
@@ -13,14 +13,16 @@ class SpaceX():
 # it should add a new rocket to SpaceX that is given in its first parameter
 # use the rockets from the fourth exercise.
 
-    def addRocket(self, rocket):
-        self.rocket = rocket
-        self.rocket += 1
+    def addRocket(self, rocket_type):
+        if self.rocket_type == 'falcon1' or self.rocket_type == 'falcon9':
+            self.num_rockets += 1
+
 
 # refill_all()
 # it should refill all of its rockets with fuel and substract the needed fuel from the storage
 
     def refill_all(self):
+        pass
 
 # launch_all()
 # it should launch all the rockets

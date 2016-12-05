@@ -14,4 +14,4 @@ def write_file(file_name, word):
     except:
         return False
 
-print(write_file("santa.txt", "hoohoohoo"))
+print(write_file("santa.txt", "hoohoohoo - "))
