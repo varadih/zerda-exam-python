@@ -25,7 +25,7 @@ The application is accepted if:
 ## 6. Question time! (~30 mins) [6p]
 
 ### Explain the algorithm seen in `third.py`. Use a flowchart, structogram or pseudo code. [2p]
-#### Your answer:
+#### Your answer: uploaded
 
 ### How can you create a graphical user interface and draw a rectangle on it in python? What are the tools needed for it? [2p]
 #### Your answer:
