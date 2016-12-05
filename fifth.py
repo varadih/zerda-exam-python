@@ -1,15 +1,27 @@
 # Create a SpaceX class.
 # it should take 1 parameter in its constructor: the stored fuel
-#
+
+
+class SpaceX():
+    def __init__(self, stored_fuel):
+        self.stored_fuel = stored_fuel
+        self.num_rockets = []
+
 # it should have 4 methods:
 #
 # addRocket(rocket)
 # it should add a new rocket to SpaceX that is given in its first parameter
 # use the rockets from the fourth exercise.
-#
+
+    def addRocket(self, rocket):
+        self.rocket = rocket
+        self.rocket += 1
+
 # refill_all()
 # it should refill all of its rockets with fuel and substract the needed fuel from the storage
-#
+
+    def refill_all(self):
+
 # launch_all()
 # it should launch all the rockets
 #
@@ -18,6 +30,9 @@
 #
 # getStats()
 # it should return its stats as a sting like: "rockets: 3, fuel: 100, launches: 1"
+
+    def getStats(self):
+        return {'rockets':self.num_rockets, 'fuel':self.fuel_level, 'launches':self.launches}
 
 ################################################
 
