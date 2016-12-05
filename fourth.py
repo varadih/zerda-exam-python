@@ -22,6 +22,7 @@ class Rocket():
         elif self.rocket_type == 'falcon9':
             self.fuel_level -= 9
         self.launches += 1
+        return "STAT AFTER LAUNCHES:", {'launches':self.launches, 'fuel':self.fuel_level}
 
 # refill()
 # it should refill the rocket's fuel level to 5 if falcon1 and to 20 if falcon9.
@@ -31,17 +32,17 @@ class Rocket():
     def refill(self, rocket_type):
         if rocket_type == 'falcon1':
             return 'used fuel:', (5 - self.fuel_level)
-            self.fuel_level = 5
+            self.fuel_level == 5
 
         elif rocket_type == 'falcon9':
             return 'used fuel:', (20 - self.fuel_level)
-            self.fuel_level = 20
+            self.fuel_level == 20
 
 # getStats()
 # it should return its stats as a string like: "name: falcon9, fuel: 11, launches: 1"
 
     def getStats(self):
-        return {'name':self.rocket_type, 'fuel':self.fuel_level, 'launches':self.launches}
+        return "STATISTIC:", {'name':self.rocket_type, 'fuel':self.fuel_level, 'launches':self.launches}
 
 ################################################
 
@@ -49,6 +50,8 @@ nasa = Rocket('falcon1', 3)
 print(nasa.getStats())
 print(nasa.refill('falcon1'))
 print(nasa.launch('falcon1'))
+print(nasa.refill('falcon1'))
+print(nasa.getStats())
 
 
 ################################################
