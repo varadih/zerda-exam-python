@@ -5,7 +5,7 @@
 # 3rd parameter: number of launches as a number, defaults to 0.
 
 class Rocket():
-    def __init__(self, rocket_type, fuel_level, launches=0):
+    def __init__(self, rocket_type, fuel_level=0, launches=0):
         self.rocket_type = rocket_type
         self.fuel_level = fuel_level
         self.launches = launches
@@ -17,12 +17,13 @@ class Rocket():
 # it should increment the launches by one if it had enough fuel for the launch.
 #
     def launch(self, rocket_type):
-        if self.rocket_type == 'falcon1':
+        if self.rocket_type == 'falcon1' and self.fuel_level >= 1:
             self.fuel_level -= 1
-        elif self.rocket_type == 'falcon9':
+            self.launches += 1
+        elif self.rocket_type == 'falcon9' and self.fuel_level >= 9:
             self.fuel_level -= 9
-        self.launches += 1
-        return "STAT AFTER LAUNCHES:", {'launches':self.launches, 'fuel':self.fuel_level}
+            self.launches += 1
+        return "STAT AFTER LAUNCH:", {'launches':self.launches, 'fuel':self.fuel_level}
 
 # refill()
 # it should refill the rocket's fuel level to 5 if falcon1 and to 20 if falcon9.
