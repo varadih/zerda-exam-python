@@ -3,7 +3,7 @@
 # It should raise an error if the parameter is not a list.
 # Example: with the input [1, 2, 3, 4, 5] it should return [2, 4].
 
-testlist = [1, 2, 3, 4, 5]
+testlist = [1, 2, 3, 4, 5, 6, 7, 8]
 
 def every_second(input_list):
     if type(input_list) is list:

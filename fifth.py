@@ -1,6 +1,7 @@
 # Create a SpaceX class.
 # it should take 1 parameter in its constructor: the stored fuel
 
+from fourth import Rocket
 
 class SpaceX(Rocket):
     def __init__(self, stored_fuel):
