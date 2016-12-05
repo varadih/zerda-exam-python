@@ -29,6 +29,12 @@ The application is accepted if:
 
 ### How can you create a graphical user interface and draw a rectangle on it in python? What are the tools needed for it? [2p]
 #### Your answer:
+There are widgets for this, for example Tkinter. Tkinter needs to be imported in the beginning of the document.
+Also requirement to define root (root=Tk()), a canvas (with its height and width) and a canvas.pack() commit before drawing the rectangle.
+After drawing the shape, it is need to be closed it by root.mainloop() commit, at the end of the document.
 
 ### What does V stand for in MVC? [2p]
 #### Your answer:
+It's the 'View' from the Model-View-Controller design pattern.
+The view displays the model data, and sends user actions to the controller.
+The view contains all of the things the user can see and respond to on the screen, such as buttons, display boxes etc.

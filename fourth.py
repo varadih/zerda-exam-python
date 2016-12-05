@@ -17,9 +17,9 @@ class Rocket():
 # it should increment the launches by one if it had enough fuel for the launch.
 #
     def launch(self, rocket_type):
-        if rocket_type == 'falcon1':
+        if self.rocket_type == 'falcon1':
             self.fuel_level -= 1
-        elif rocket_type == 'falcon9':
+        elif self.rocket_type == 'falcon9':
             self.fuel_level -= 9
         self.launches += 1
 
