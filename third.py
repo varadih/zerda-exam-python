@@ -8,3 +8,5 @@ def count_letter_in_string(string, letter):
     if current_letter == letter:
       count += 1
   return count
+
+print(count_letter_in_string("madarka", "a"))
